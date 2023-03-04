@@ -1,0 +1,18 @@
+{
+  "name": "test-frida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile index.ts -o dist/_agent.js -c",
+    "watch": "frida-compile index.ts -o dist/_agent.js -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/frida-gum": "^18.1.0",
+    "@types/node": "^18.0.6",
+    "frida-compile": "^15.0.8"
+  }
+}

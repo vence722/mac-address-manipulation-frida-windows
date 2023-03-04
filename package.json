@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "npm run build",
     "build": "frida-compile index.ts -o dist/_agent.js -c",
     "watch": "frida-compile index.ts -o dist/_agent.js -w"
   },
